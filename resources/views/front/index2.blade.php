@@ -31,7 +31,7 @@
             <div class="preloader-inner position-relative">
                 <div class="preloader-circle"></div>
                 <div class="preloader-img pere-text">
-                    <img src="assets/img/logo/logo.png" alt="">
+                    <img src="{{asset('jobs2/assets/img/logo/logo.png')}}" alt="">
                 </div>
             </div>
         </div>
@@ -46,7 +46,7 @@
                         <div class="col-lg-3 col-md-2">
                             <!-- Logo -->
                             <div class="logo">
-                                <a href="index.html"><img src="assets/img/logo/logo.png" alt=""></a>
+                                <a href=""><img src="{{asset('jobs2/assets/img/logo/logo.png')}}" alt=""></a>
                             </div>  
                         </div>
                         <div class="col-lg-9 col-md-9">
@@ -93,7 +93,7 @@
         <div class="slider-area ">
             <!-- Mobile Menu -->
             <div class="slider-active">
-                <div class="single-slider slider-height d-flex align-items-center" data-background="assets/img/hero/h1_hero.jpg">
+                <div class="single-slider slider-height d-flex align-items-center" data-background="{{asset('jobs2/assets/img/hero/h1_hero.jpg')}}">
                     <div class="container">
                         <div class="row">
                             <div class="col-xl-6 col-lg-9 col-md-10">
@@ -278,7 +278,7 @@
                         <div class="single-job-items mb-30">
                             <div class="job-items">
                                 <div class="company-img">
-                                    <a href="job_details.html"><img src="assets/img/icon/job-list1.png" alt=""></a>
+                                    <a href="job_details.html"><img src="{{asset('jobs2/assets/img/icon/job-list1.png')}}" alt=""></a>
                                 </div>
                                 <div class="job-tittle">
                                     <a href="job_details.html"><h4>Digital Marketer</h4></a>
@@ -298,7 +298,7 @@
                         <div class="single-job-items mb-30">
                             <div class="job-items">
                                 <div class="company-img">
-                                    <a href="job_details.html"><img src="assets/img/icon/job-list2.png" alt=""></a>
+                                    <a href="job_details.html"><img src="{{asset('jobs2/assets/img/icon/job-list2.png')}}" alt=""></a>
                                 </div>
                                 <div class="job-tittle">
                                     <a href="job_details.html"><h4>Digital Marketer</h4></a>
@@ -318,7 +318,7 @@
                         <div class="single-job-items mb-30">
                             <div class="job-items">
                                 <div class="company-img">
-                                    <a href="job_details.html"><img src="assets/img/icon/job-list3.png" alt=""></a>
+                                    <a href="job_details.html"><img src="{{asset('jobs2/assets/img/icon/job-list3.png')}}" alt=""></a>
                                 </div>
                                 <div class="job-tittle">
                                     <a href="job_details.html"><h4>Digital Marketer</h4></a>
@@ -338,7 +338,7 @@
                         <div class="single-job-items mb-30">
                             <div class="job-items">
                                 <div class="company-img">
-                                    <a href="job_details.html"><img src="assets/img/icon/job-list4.png" alt=""></a>
+                                    <a href="job_details.html"><img src="{{asset('jobs2/assets/img/icon/job-list4.png')}}" alt=""></a>
                                 </div>
                                 <div class="job-tittle">
                                     <a href="job_details.html"><h4>Digital Marketer</h4></a>
@@ -360,7 +360,7 @@
         </section>
         <!-- Featured_job_end -->
         <!-- How  Apply Process Start-->
-        <div class="apply-process-area apply-bg pt-150 pb-150" data-background="assets/img/gallery/how-applybg.png">
+        <div class="apply-process-area apply-bg pt-150 pb-150" data-background="{{asset('jobs2/assets/img/gallery/how-applybg.png')}}">
             <div class="container">
                 <!-- Section Tittle -->
                 <div class="row">
@@ -424,7 +424,7 @@
                                     <!-- founder -->
                                     <div class="testimonial-founder  ">
                                         <div class="founder-img mb-30">
-                                            <img src="assets/img/testmonial/testimonial-founder.png" alt="">
+                                            <img src="{{asset('jobs2/assets/img/testmonial/testimonial-founder.png')}}" alt="">
                                             <span>Margaret Lawson</span>
                                             <p>Creative Director</p>
                                         </div>
@@ -441,7 +441,7 @@
                                     <!-- founder -->
                                     <div class="testimonial-founder  ">
                                         <div class="founder-img mb-30">
-                                            <img src="assets/img/testmonial/testimonial-founder.png" alt="">
+                                            <img src="{{asset('jobs2/assets/img/testmonial/testimonial-founder.png')}}" alt="">
                                             <span>Margaret Lawson</span>
                                             <p>Creative Director</p>
                                         </div>
@@ -458,7 +458,7 @@
                                     <!-- founder -->
                                     <div class="testimonial-founder  ">
                                         <div class="founder-img mb-30">
-                                            <img src="assets/img/testmonial/testimonial-founder.png" alt="">
+                                            <img src="{{asset('jobs2/assets/img/testmonial/testimonial-founder.png')}}" alt="">
                                             <span>Margaret Lawson</span>
                                             <p>Creative Director</p>
                                         </div>
@@ -494,7 +494,7 @@
                     </div>
                     <div class="col-xl-6 col-lg-6">
                         <div class="support-location-img">
-                            <img src="assets/img/service/support-img.jpg" alt="">
+                            <img src="{{asset('jobs2/assets/img/service/support-img.jpg')}}" alt="">
                             <div class="support-img-cap text-center">
                                 <p>Since</p>
                                 <span>1994</span>
@@ -541,7 +541,7 @@
                         <div class="home-blog-single mb-30">
                             <div class="blog-img-cap">
                                 <div class="blog-img">
-                                    <img src="assets/img/blog/home-blog2.jpg" alt="">
+                                    <img src="{{asset('jobs2/assets/img/blog/home-blog2.jpg')}}" alt="">
                                     <!-- Blog date -->
                                     <div class="blog-date text-center">
                                         <span>24</span>
@@ -642,7 +642,7 @@
                     <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
                         <!-- logo -->
                         <div class="footer-logo mb-20">
-                        <a href="index.html"><img src="assets/img/logo/logo2_footer.png" alt=""></a>
+                        <a href="index.html"><img src="{{asset('jobs2/assets/img/logo/logo2_footer.png')}}" alt=""></a>
                         </div>
                     </div>
                     <div class="col-xl-3 col-lg-3 col-md-4 col-sm-5">
@@ -697,39 +697,39 @@
   <!-- JS here -->
 	
 		<!-- All JS Custom Plugins Link Here here -->
-        <script src="{{asset('assets/js/vendor/modernizr-3.5.0.min.js')}}"></script>
+        <script src="{{asset('jobs2/assets/js/vendor/modernizr-3.5.0.min.js')}}"></script>
 		<!-- Jquery, Popper, Bootstrap -->
-		<script src="{{asset('assets/js/vendor/jquery-1.12.4.min.js')}}"></script>
-        <script src="{{asset('assets/js/popper.min.js')}}"></script>
-        <script src="{{asset('assets/js/bootstrap.min.js')}}"></script>
+		<script src="{{asset('jobs2/assets/js/vendor/jquery-1.12.4.min.js')}}"></script>
+        <script src="{{asset('jobs2/assets/js/popper.min.js')}}"></script>
+        <script src="{{asset('jobs2/assets/js/bootstrap.min.js')}}"></script>
 	    <!-- Jquery Mobile Menu -->
-        <script src="{{asset('assets/js/jquery.slicknav.min.js')}}"></script>
+        <script src="{{asset('jobs2/assets/js/jquery.slicknav.min.js')}}"></script>
 
 		<!-- Jquery Slick , Owl-Carousel Plugins -->
-        <script src="{{asset('assets/js/owl.carousel.min.js')}}"></script>
-        <script src="{{asset('assets/js/slick.min.js')}}"></script>
-        <script src="{{asset('assets/js/price_rangs.js')}}"></script>
+        <script src="{{asset('jobs2/assets/js/owl.carousel.min.js')}}"></script>
+        <script src="{{asset('jobs2/assets/js/slick.min.js')}}"></script>
+        <script src="{{asset('jobs2/assets/js/price_rangs.js')}}"></script>
         
 		<!-- One Page, Animated-HeadLin -->
-        <script src="{{asset('assets/js/wow.min.js')}}"></script>
-		<script src="{{asset('assets/js/animated.headline.js')}}"></script>
-        <script src="{{asset('assets/js/jquery.magnific-popup.js')}}"></script>
+        <script src="{{asset('jobs2/assets/js/wow.min.js')}}"></script>
+		<script src="{{asset('jobs2/assets/js/animated.headline.js')}}"></script>
+        <script src="{{asset('jobs2/assets/js/jquery.magnific-popup.js')}}"></script>
 
 		<!-- Scrollup, nice-select, sticky -->
-        <script src="{{asset('assets/js/jquery.scrollUp.min.js')}}"></script>
-        <script src="{{asset('assets/js/jquery.nice-select.min.js')}}"></script>
-		<script src="{{asset('assets/js/jquery.sticky.js')}}"></script>
+        <script src="{{asset('jobs2/assets/js/jquery.scrollUp.min.js')}}"></script>
+        <script src="{{asset('jobs2/assets/js/jquery.nice-select.min.js')}}"></script>
+		<script src="{{asset('jobs2/assets/js/jquery.sticky.js')}}"></script>
         
         <!-- contact js -->
-        <script src="{{asset('assets/js/contact.js')}}"></script>
-        <script src="{{asset('assets/js/jquery.form.js')}}"></script>
-        <script src="{{asset('assets/js/jquery.validate.min.js')}}"></script>
-        <script src="{{asset('assets/js/mail-script.js')}}"></script>
-        <script src="{{asset('assets/js/jquery.ajaxchimp.min.js')}}"></script>
+        <script src="{{asset('jobs2/assets/js/contact.js')}}"></script>
+        <script src="{{asset('jobs2/assets/js/jquery.form.js')}}"></script>
+        <script src="{{asset('jobs2/assets/js/jquery.validate.min.js')}}"></script>
+        <script src="{{asset('jobs2/assets/js/mail-script.js')}}"></script>
+        <script src="{{asset('jobs2/assets/js/jquery.ajaxchimp.min.js')}}"></script>
         
 		<!-- Jquery Plugins, main Jquery -->	
-        <script src="{{asset('assets/js/plugins.js')}}"></script>
-        <script src="{{asset('assets/js/main.js')}}"></script>
+        <script src="{{asset('jobs2/assets/js/plugins.js')}}"></script>
+        <script src="{{asset('jobs2/assets/js/main.js')}}"></script>
         
     </body>
 </html>
