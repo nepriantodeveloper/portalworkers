@@ -1,7 +1,10 @@
 <?php
 
+use App\Models\Workers;
+use App\Models\Reqruiters;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
+
 use Illuminate\Support\Facades\Schema;
 
 return new class extends Migration
@@ -18,6 +21,8 @@ return new class extends Migration
             $table->integer('transaction_type',11);
             $table->enum('status_validasi',['N','Y'])->index();
             $table->enum('status_project',['N','Y'])->index();
+            // $table->foreignIdFor(Workers::class)->constrained();
+            // $table->foreignIdFor(Reqruiters::class)->constrained();
             $table->foreign('workers')->references('id')->on('users')->onDelete('cascade');
             $table->foreign('recruiter')->references('id')->on('users')->onDelete('cascade');
             $table->timestamps();
