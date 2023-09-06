@@ -19,8 +19,8 @@ return new class extends Migration
             $table->integer('worker_id',11);
             $table->integer('recruiter_id',11);
             $table->integer('transaction_type',11);
-            $table->enum('status_validasi',['N','Y'])->index();
-            $table->enum('status_project',['N','Y'])->index();
+            $table->enum('status_validasi',['N','Y'])->default('N');
+            $table->enum('status_project',['N','Y'])->default('N');
             // $table->foreignIdFor(Workers::class)->constrained();
             // $table->foreignIdFor(Reqruiters::class)->constrained();
             $table->foreign('workers')->references('id')->on('users')->onDelete('cascade');
