@@ -13,7 +13,16 @@ return new class extends Migration
     {
         Schema::create('worker_schools', function (Blueprint $table) {
             $table->id();
+            $table->unsignedBigInteger('worker_id');
+            $table->unsignedBigInteger('validator_id');
+            $table->string('nama_sekolah');
+            $table->string('alamat_sekolah');
+            $table->enum('status_validasi', ['N', 'Y'])->default('N');
             $table->timestamps();
+
+
+            $table->foreign('worker_id')->references('id')->on('workers');
+            $table->foreign('validator_id')->references('id')->on('validators');
         });
     }
 

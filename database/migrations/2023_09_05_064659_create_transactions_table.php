@@ -16,16 +16,15 @@ return new class extends Migration
     {
         Schema::create('transactions', function (Blueprint $table) {
             $table->id();
-            $table->integer('worker_id',11);
-            $table->integer('recruiter_id',11);
-            $table->integer('transaction_type',11);
-            $table->enum('status_validasi',['N','Y'])->default('N');
-            $table->enum('status_project',['N','Y'])->default('N');
-            // $table->foreignIdFor(Workers::class)->constrained();
-            // $table->foreignIdFor(Reqruiters::class)->constrained();
-            $table->foreign('workers')->references('id')->on('users')->onDelete('cascade');
-            $table->foreign('recruiter')->references('id')->on('users')->onDelete('cascade');
+            $table->enum('transaction_type', ['Job', 'Recruitment'])->default('Recruitment');
+            $table->enum('status_validasi', ['N', 'Y'])->default('N');
+            $table->enum('status_project', ['N', 'Y'])->default('N');
+            $table->unsignedBigInteger('worker_id');
+            $table->unsignedBigInteger('recruiter_id');
             $table->timestamps();
+
+            $table->foreign('worker_id')->references('id')->on('workers');
+            $table->foreign('recruiter_id')->references('id')->on('recruiters');
         });
     }
 

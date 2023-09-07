@@ -12,7 +12,8 @@ use Illuminate\Routing\Controller as BaseController;
     *     description="Stock Workers Api Documentation",
     *     @OA\Contact(
     *         name="Neprianto",
-    *         email="neprianto@gmail.com"
+    *         email="neprianto@gmail.com",
+    *         website="www.stock-workers.com",
     *     ),
     *     @OA\License(
     *         name="Apache 2.0",

@@ -41,7 +41,7 @@ class PaymentsController extends Controller
      * @OA\Post(
      *      path="/payments",
      *      operationId="store",
-     *      tags={"payments"},
+     *      tags={"Store"},
      *      summary="Store payments in DB",
      *      description="Store payments in DB",
      *      @OA\RequestBody(
@@ -77,7 +77,7 @@ class PaymentsController extends Controller
      * @OA\Get(
      *    path="/payments/{id}",
      *    operationId="show",
-     *    tags={"paymentss"},
+     *    tags={"Detail"},
      *    summary="Get payments Detail",
      *    description="Get payments Detail",
      *    @OA\Parameter(name="id", in="path", description="Id of payments", required=true,
@@ -103,7 +103,7 @@ class PaymentsController extends Controller
      * @OA\Put(
      *     path="/paymentss/{id}",
      *     operationId="update",
-     *     tags={"paymentss"},
+     *     tags={"Update"},
      *     summary="Update payments in DB",
      *     description="Update payments in DB",
      *     @OA\Parameter(name="id", in="path", description="Id of payments", required=true,
@@ -136,7 +136,7 @@ class PaymentsController extends Controller
      * @OA\Delete(
      *    path="/payments/{id}",
      *    operationId="destroy",
-     *    tags={"payments"},
+     *    tags={"Delete"},
      *    summary="Delete payments",
      *    description="Delete payments",
      *    @OA\Parameter(name="id", in="path", description="Id of payments", required=true,
