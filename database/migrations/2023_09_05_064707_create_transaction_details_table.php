@@ -25,8 +25,6 @@ return new class extends Migration
             $table->string('link_referensi_apps');
             $table->enum('status_project', ['N', 'Y'])->default('N');
             $table->timestamps();
-
-
             $table->foreign('transaction_id')->references('id')->on('transactions');
         });
     }

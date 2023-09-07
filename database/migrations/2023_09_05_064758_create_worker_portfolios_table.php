@@ -22,7 +22,6 @@ return new class extends Migration
             $table->string('link_demo_live');
             $table->enum('status_validasi', ['N', 'Y'])->default('N');
             $table->timestamps();
-
             $table->foreign('worker_id')->references('id')->on('workers');
             $table->foreign('validator_id')->references('id')->on('validators');
         });

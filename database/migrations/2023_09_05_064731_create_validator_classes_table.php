@@ -19,7 +19,6 @@ return new class extends Migration
             $table->string('banner');
             $table->string('link_course');
             $table->timestamps();
-
             $table->foreign('validator_id')->references('id')->on('validators');
         });
     }

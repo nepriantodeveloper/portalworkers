@@ -20,7 +20,6 @@ return new class extends Migration
             $table->text('deskripsi');
             $table->enum('status_validasi', ['N', 'Y'])->default('N');
             $table->timestamps();
-
             $table->foreign('worker_id')->references('id')->on('workers');
             $table->foreign('validator_id')->references('id')->on('validators');
         });

@@ -19,10 +19,9 @@ return new class extends Migration
             $table->enum('transaction_type', ['Job', 'Recruitment'])->default('Recruitment');
             $table->enum('status_validasi', ['N', 'Y'])->default('N');
             $table->enum('status_project', ['N', 'Y'])->default('N');
-            $table->unsignedBigInteger('worker_id');
-            $table->unsignedBigInteger('recruiter_id');
+            $table->foreignId('worker_id');
+            $table->foreignId('recruiter_id');
             $table->timestamps();
-
             $table->foreign('worker_id')->references('id')->on('workers');
             $table->foreign('recruiter_id')->references('id')->on('recruiters');
         });

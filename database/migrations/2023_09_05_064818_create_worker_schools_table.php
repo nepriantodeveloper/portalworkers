@@ -19,8 +19,6 @@ return new class extends Migration
             $table->string('alamat_sekolah');
             $table->enum('status_validasi', ['N', 'Y'])->default('N');
             $table->timestamps();
-
-
             $table->foreign('worker_id')->references('id')->on('workers');
             $table->foreign('validator_id')->references('id')->on('validators');
         });

@@ -80,7 +80,7 @@
             },
             "post": {
                 "tags": [
-                    "payments"
+                    "Store"
                 ],
                 "summary": "Store payments in DB",
                 "description": "Store payments in DB",
@@ -143,7 +143,7 @@
         "/payments/{id}": {
             "get": {
                 "tags": [
-                    "paymentss"
+                    "Detail"
                 ],
                 "summary": "Get payments Detail",
                 "description": "Get payments Detail",
@@ -183,7 +183,7 @@
             },
             "delete": {
                 "tags": [
-                    "payments"
+                    "Delete"
                 ],
                 "summary": "Delete payments",
                 "description": "Delete payments",
@@ -225,7 +225,7 @@
         "/paymentss/{id}": {
             "put": {
                 "tags": [
-                    "paymentss"
+                    "Update"
                 ],
                 "summary": "Update payments in DB",
                 "description": "Update payments in DB",

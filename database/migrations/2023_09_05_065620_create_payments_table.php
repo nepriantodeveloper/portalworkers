@@ -17,7 +17,6 @@ return new class extends Migration
             $table->string('payment_url');
             $table->enum('status', ['1', '2','3','4'])->default('1');
             $table->timestamps();
-
             $table->foreign('transaction_id')->references('id')->on('transactions');
         });
     }
