@@ -13,8 +13,8 @@ return new class extends Migration
     {
         Schema::create('validators', function (Blueprint $table) {
             $table->id();
-            $table->string('nama',100);
-            $table->string('email',100);
+            $table->string('name',100);
+            $table->string('email',100)->unique();
             $table->string('hp',15);
             $table->string('username',50);
             $table->string('password');

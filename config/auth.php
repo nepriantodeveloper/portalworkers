@@ -40,6 +40,19 @@ return [
             'driver' => 'session',
             'provider' => 'users',
         ],
+        'workers' => [
+            'driver' => 'sanctum',
+            'provider' => 'workers',
+        ],
+        'recruiters' => [
+            'driver' => 'sanctum',
+            'provider' => 'recruiters',
+        ],
+        'validators' => [
+            'driver' => 'sanctum',
+            'provider' => 'validators',
+        ],
+        
     ],
 
     /*
@@ -63,6 +76,14 @@ return [
         'users' => [
             'driver' => 'eloquent',
             'model' => App\Models\User::class,
+        ],
+        'recruiters' => [
+            'driver' => 'eloquent',
+            'model' => App\Models\Recruiters::class,
+        ],
+        'validators' => [
+            'driver' => 'eloquent',
+            'model' => App\Models\Validators::class,
         ],
 
         // 'users' => [

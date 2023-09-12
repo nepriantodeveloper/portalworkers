@@ -3,7 +3,10 @@
 namespace App\Http\Controllers\API;
 
 use App\Http\Controllers\Controller;
+use App\Models\Workers;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Validator;
 
 class WorkersController extends Controller
 {
@@ -45,5 +48,48 @@ class WorkersController extends Controller
     public function destroy(string $id)
     {
         //
+    }
+
+    public function login(Request $request)
+    {
+        $validator = Validator::make($request->all(), [
+            'email' => 'required|email',
+            'password' => 'required',
+        ]);
+        if ($validator->fails()) {
+            return response()->json(['error' => $validator->errors()->all()]);
+        }
+
+
+        if (auth()->attempt(['email' => $request->email, 'password' => $request->password])) {
+
+            $workers = Workers::select('id', 'name', 'email')->find(auth()->guard('workers')->user()->id);
+            $success =  $workers;
+            $success['token'] =  $workers->createToken('MyApp', ['workers'])->plainTextToken;
+
+            return response()->json($success, 200);
+        } else {
+            return response()->json(['error' => ['Email and Password are Wrong.']], 200);
+        }
+    }
+
+    public function register(Request $request)
+    {
+        $validator = Validator::make($request->all(), [
+            'name' => 'required',
+            'email' => 'required|email',
+            'password' => 'required',
+            'c_password' => 'required|same:password',
+        ]);
+        if ($validator->fails()) {
+            return response()->json(['error' => $validator->errors()->all()]);
+        }
+        $input = $request->all();
+        $input['password'] = Hash::make($input['password']);
+        $workers = Workers::create($input);
+        $success =  $workers;
+        $success['token'] =  $workers->createToken('MyApp', ['workers'])->plainTextToken;
+
+        return response()->json($success, 200);
     }
 }

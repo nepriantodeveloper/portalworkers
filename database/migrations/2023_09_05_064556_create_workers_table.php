@@ -13,18 +13,19 @@ return new class extends Migration
     {
         Schema::create('workers', function (Blueprint $table) {
             $table->id();
-            $table->string('username',50);
+            $table->string('username',50)->nullable();
             $table->string('password');
-            $table->string('email',100);
-            $table->string('ktp',16);
-            $table->string('nama_bank',100);
-            $table->string('rekening_bank',16);
-            $table->string('npwp',30);
-            $table->text('alamat');
-            $table->double('lat');
-            $table->double('lng');
-            $table->string('foto');
-            $table->integer('lvl');
+            $table->string('name',50);
+            $table->string('email',100)->unique();
+            $table->string('ktp',16)->nullable();
+            $table->string('nama_bank',100)->nullable();
+            $table->string('rekening_bank',16)->nullable();
+            $table->string('npwp',30)->nullable();
+            $table->text('alamat')->nullable();
+            $table->double('lat')->nullable();
+            $table->double('lng')->nullable();
+            $table->string('foto')->nullable();
+            $table->integer('lvl')->nullable();
             $table->timestamps();
         });
     }
