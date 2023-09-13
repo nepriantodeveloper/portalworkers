@@ -41,7 +41,7 @@ return [
             'provider' => 'users',
         ],
         'workers' => [
-            'driver' => 'sanctum',
+            'driver' => 'token',
             'provider' => 'workers',
         ],
         'recruiters' => [
@@ -49,10 +49,10 @@ return [
             'provider' => 'recruiters',
         ],
         'validators' => [
-            'driver' => 'sanctum',
+            'driver' => 'token',
             'provider' => 'validators',
         ],
-        
+
     ],
 
     /*
@@ -76,6 +76,10 @@ return [
         'users' => [
             'driver' => 'eloquent',
             'model' => App\Models\User::class,
+        ],
+        'workers' => [
+            'driver' => 'eloquent',
+            'model' => App\Models\workers::class,
         ],
         'recruiters' => [
             'driver' => 'eloquent',
